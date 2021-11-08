@@ -15,7 +15,7 @@ public class donhangpr extends AppCompatActivity {
         getSupportActionBar().hide();
         getSupportActionBar().hide();
         setContentView(R.layout.activity_donhangpr);
-        lsB = (Button) findViewById(R.id.btnLichSu);
+
         nhB = (Button) findViewById(R.id.nhahang);
         tbB = (Button) findViewById(R.id.thongbao1);
         tkB = (Button) findViewById(R.id.taik);
