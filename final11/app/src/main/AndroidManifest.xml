@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Final1">
         <activity
+            android:name=".ActivityDonHangFragment"
+            android:exported="false" />
+        <activity
             android:name=".lichsu"
             android:exported="true" />
         <activity

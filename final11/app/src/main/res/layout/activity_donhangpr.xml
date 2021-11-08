@@ -7,40 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".donhangpr">
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/header"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-        <Button
-            android:id="@+id/btnDangDen"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="5dp"
-            android:layout_weight="1"
-            android:background="#fff"
-            android:gravity="center"
-            android:text="Đang đến"
-            android:textColor="#Ef0d0d"
-            android:textSize="17dp"
-            android:textStyle="bold"></Button>
-
-        <Button
-            android:id="@+id/btnLichSu"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="5dp"
-            android:layout_weight="1"
-            android:background="#fff"
-            android:gravity="center"
-            android:text="Lịch sử"
-            android:textColor="#000"
-            android:textSize="17dp"></Button>
-    </LinearLayout>
-
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
@@ -168,59 +137,58 @@
                     >
                 </TextView>
             </LinearLayout>
-
         </LinearLayout>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:orientation="horizontal"
-                android:weightSum="4">
-
-                <Button
-                    android:id="@+id/nhahang"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="#fff"
-                    android:drawableTop="@drawable/res"
-                    android:text="Nhà hàng"
-                    android:textColor="#000"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#fff"
-                    android:drawableTop="@drawable/qq"
-                    android:text="Đơn hàng"
-                    android:textColor="#ef0d0d"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="#fff"
-                    android:id="@+id/thongbao1"
-                    android:drawableTop="@drawable/noti"
-                    android:text="Thông báo"
-                    android:textColor="#000"></Button>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:id="@+id/taik"
-                    android:background="#fff"
-                    android:drawableTop="@drawable/us"
-                    android:text="Tài Khoản"
-                    android:textColor="#000"></Button>
-            </LinearLayout>
-        </RelativeLayout>
     </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="4">
 
+            <Button
+                android:id="@+id/nhahang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/res"
+                android:text="Nhà hàng"
+                android:textColor="#000"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:drawableTop="@drawable/qq"
+                android:text="Đơn hàng"
+                android:textColor="#ef0d0d"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:id="@+id/thongbao1"
+                android:drawableTop="@drawable/noti"
+                android:text="Thông báo"
+                android:textColor="#000"></Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/taik"
+                android:background="#fff"
+                android:drawableTop="@drawable/us"
+                android:text="Tài Khoản"
+                android:textColor="#000"></Button>
+        </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

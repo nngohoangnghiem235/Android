@@ -14,7 +14,7 @@ public class lichsu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_lichsu);
-        ddback = (Button) findViewById(R.id.btnDangDen);
+
 
         ddback.setOnClickListener(new View.OnClickListener() {
             @Override
