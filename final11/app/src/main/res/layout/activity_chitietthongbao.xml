@@ -124,7 +124,7 @@
                 android:drawableTop="@drawable/res"
                 android:fontFamily="sans-serif"
                 android:text="Nhà hàng"
-                android:id="@+id/btnNhaHang"
+                android:id="@+id/btnTrangChu"
                 android:textColor="#000"></Button>
             <Button
                 android:layout_width="wrap_content"

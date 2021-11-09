@@ -24,7 +24,7 @@ public class ActivityDonHangFragment extends AppCompatActivity {
 
     FragmentPagerItemAdapter adapter;
     FragmentPagerItems pages;
-    Button btnNhaHang,btnDH,btnThongBao,btnTK;
+    Button btnTrangChu,btnDH,btnThongBao,btnTK;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,10 +33,11 @@ public class ActivityDonHangFragment extends AppCompatActivity {
         // Attach our tools with activity
         tabLayout = findViewById(R.id.tablayout);
         viewPager = findViewById(R.id.viewpager);
-        btnNhaHang = findViewById(R.id.btnNhaHang);
+        btnTrangChu = findViewById(R.id.btnTrangChu);
         btnThongBao = findViewById(R.id.btnThongBao);
         btnTK = findViewById(R.id.btnTaiKhoan);
-        btnNhaHang.setOnClickListener(new View.OnClickListener() {
+
+        btnTrangChu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ActivityDonHangFragment.this, trangchu.class);
