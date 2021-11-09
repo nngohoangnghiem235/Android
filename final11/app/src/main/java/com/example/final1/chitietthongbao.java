@@ -8,18 +8,18 @@ import android.view.View;
 import android.widget.Button;
 
 public class chitietthongbao extends AppCompatActivity {
-    Button btnBack,btnNhaHang, btnDonHang, btnTaiKhoan;
+    Button btnBack,btnTrangChu, btnDonHang, btnTaiKhoan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_chitietthongbao);
         btnBack = (Button) findViewById(R.id.btnBack);
-        btnNhaHang = (Button) findViewById(R.id.btnNhaHang);
+        btnTrangChu = (Button) findViewById(R.id.btnTrangChu);
         btnDonHang = (Button) findViewById(R.id.btnDonHang);
         btnTaiKhoan = (Button) findViewById(R.id.btnTaiKhoan);
 
-        btnNhaHang.setOnClickListener(new View.OnClickListener() {
+        btnTrangChu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(chitietthongbao.this, trangchu.class);

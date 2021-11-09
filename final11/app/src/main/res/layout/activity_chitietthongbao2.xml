@@ -66,6 +66,7 @@
                 android:fontFamily="sans-serif"
                 android:text="Ưu đãi bạn mới, giảm 50% cho đơn đầu tiên, freeship trong bán kính 10km"
                 android:textSize="18sp"
+                android:textColor="#000"
                 android:textStyle="bold" />
 
             <TextView
@@ -119,7 +120,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/btnNhaHang"
+                android:id="@+id/btnTrangChu"
                 android:layout_weight="1"
                 android:background="#fff"
                 android:drawableTop="@drawable/res"

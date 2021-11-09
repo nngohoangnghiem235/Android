@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class canhan extends AppCompatActivity {
     TextView tvThongTinTaiKhoan,tvDiaChiGiaoHang,tvCaiDat,tvDangXuat;
-    Button btnNhaHang,btnDonHang,btnThongBao;
+    Button btnTrangChu,btnDonHang,btnThongBao;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,10 +18,33 @@ public class canhan extends AppCompatActivity {
         setContentView(R.layout.activity_canhan);
         tvThongTinTaiKhoan = (TextView) findViewById(R.id.tvThongTinTaiKhoan);
         tvDiaChiGiaoHang =(TextView) findViewById(R.id.tvDiaChiGiaoHang);
-        btnNhaHang=(Button)findViewById(R.id.nhahang);
+        btnTrangChu=(Button)findViewById(R.id.btnTrangChu);
+        btnDonHang=(Button)findViewById(R.id.btnDonHang);
+        btnThongBao=(Button)findViewById(R.id.btnThongBao);
         tvCaiDat = (TextView) findViewById(R.id.tvCaiDat);
         tvDangXuat=(TextView) findViewById(R.id.tvDangXuat);
 
+        btnTrangChu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(canhan.this, trangchu.class);
+                startActivity(intent);
+            }
+        });
+        btnThongBao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(canhan.this, thongbao.class);
+                startActivity(intent);
+            }
+        });
+        btnDonHang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(canhan.this, ActivityDonHangFragment.class);
+                startActivity(intent);
+            }
+        });
         tvDangXuat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

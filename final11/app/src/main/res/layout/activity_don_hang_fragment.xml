@@ -32,7 +32,7 @@
             android:weightSum="4">
 
             <Button
-                android:id="@+id/btnNhaHang"
+                android:id="@+id/btnTrangChu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

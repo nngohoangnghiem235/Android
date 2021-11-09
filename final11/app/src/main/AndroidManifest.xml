@@ -13,12 +13,6 @@
             android:name=".ActivityDonHangFragment"
             android:exported="false" />
         <activity
-            android:name=".lichsu"
-            android:exported="true" />
-        <activity
-            android:name=".donhangpr"
-            android:exported="true" />
-        <activity
             android:name=".thongtintaikhoan2"
             android:exported="true" />
         <activity
